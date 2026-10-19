@@ -1,0 +1,17 @@
+{
+  "name": "my-self",
+  "version": "1.0.0",
+  "description": "Local SQL injection training lab built with Express and SQLite",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

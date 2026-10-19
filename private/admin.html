@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+    <main class="dashboard">
+        <span class="badge admin-badge">ADMINISTRATOR</span>
+
+
+    <h1>Admin Dashboard</h1>
+
+    <p>
+        Bạn đang truy cập khu vực quản trị của hệ thống.
+    </p>
+
+    <section class="info">
+        <h3>Quyền quản trị</h3>
+        <p>Role: Admin</p>
+        <p>Access level: Restricted</p>
+    </section>
+
+    <section class="flag">
+        <p class="flag-label">CHALLENGE FLAG</p>
+        <p class="flag-value">FLAG{SQL_Injection_to_bypass}</p>
+    </section>
+
+    <button class="admin-button" id="logout">
+        Đăng xuất
+    </button>
+</main>
+
+<script>
+    document.getElementById("logout").onclick = async () => {
+        await fetch("/logout", { method: "POST" });
+        window.location.href = "/";
+    };
+</script>
+
+
+</body>
+</html>

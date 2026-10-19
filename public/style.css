@@ -1,0 +1,209 @@
+
+body {
+    height: 100vh;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    /* Background */
+    background: linear-gradient(
+        135deg,
+        #1e3c72,
+        #2a5298,
+        #6dd5ed
+    );
+
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Login box */
+.form-container {
+    max-width: 320px;
+    width: 100%;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+
+    backdrop-filter: blur(15px);
+}
+
+
+/* Login title */
+.form-header {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-weight: bold;
+
+    font-size: 1.2rem;
+
+    text-transform: uppercase;
+
+    color: white;
+}
+
+
+/* Input area */
+.input-container {
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+
+/* Username & password */
+.input-container input {
+    box-sizing: border-box;
+
+    padding: 15px 20px;
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    border: 2px solid transparent;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    font-size: 1rem;
+
+    outline: none;
+
+    color: white;
+}
+
+
+/* Khi click vào input */
+.input-container input:focus {
+    border: 2px solid #6dd5ed;
+
+    box-shadow:
+        0 0 10px rgba(109, 213, 237, 0.8);
+}
+
+
+/* Placeholder */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 0.9rem;
+}
+
+
+/* Forgot password */
+.forgot-password {
+    text-align: right;
+
+    margin-bottom: 20px;
+}
+
+
+.forgot-password a {
+    text-decoration: none;
+
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+
+.forgot-password a:hover {
+    color: #6dd5ed;
+
+    text-decoration: underline;
+}
+
+
+/* Login button */
+.submit {
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 25px;
+
+    border: none;
+
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+
+    color: #1e3c72;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #6dd5ed
+    );
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Hover button */
+.submit:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Sign up text */
+.signup {
+    text-align: center;
+
+    font-size: 14px;
+
+    color: white;
+}
+
+
+/* Sign up link */
+.signup a {
+    text-decoration: none;
+
+    color: #6dd5ed;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Sign up hover */
+.signup a:hover {
+    color: white;
+
+    text-decoration: underline;
+}
+

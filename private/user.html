@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+    <main class="dashboard">
+        <span class="badge user-badge">USER ACCOUNT</span>
+
+
+    <h1>Chào mừng trở lại!</h1>
+
+    <p>
+        Bạn đã đăng nhập thành công vào hệ thống.
+        Đây là trang dành cho người dùng thông thường.
+    </p>
+
+    <section class="info">
+        <h3>Thông tin tài khoản</h3>
+        <p>Quyền truy cập: User</p>
+        <p>Trạng thái: Đã đăng nhập</p>
+    </section>
+
+    <button class="user-button" id="logout">
+        Đăng xuất
+    </button>
+</main>
+
+<script>
+    document.getElementById("logout").onclick = async () => {
+        await fetch("/logout", { method: "POST" });
+        window.location.href = "/";
+    };
+</script>
+
+
+</body>
+</html>
